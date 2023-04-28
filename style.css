@@ -1,0 +1,77 @@
+/*
+Theme Name: HARC Amalie Lite Child
+Theme URI: http://www.anarieldesign.com/amalie-lite-free-wordpress-theme/
+Template: amalie-lite
+Author: Anariel Design
+Author URI: http://www.anarieldesign.com/
+Description: "Amalie Lite" is a feature rich, uniquely designed free blogging theme built upon the free "Twenty Fifteen" WordPress theme. Responsive grid is a standard these days and "Amalie" makes a good use of it to preserve its unique looks across the whole range of internet capable devices.
+Tags: two-columns,left-sidebar,accessibility-ready,custom-background,custom-header,custom-menu,editor-style,featured-images,microformats,post-formats,rtl-language-support,sticky-post,threaded-comments,translation-ready,blog,news
+Version: 1.1.6.1632412377
+Updated: 2021-09-23 15:52:57
+*/
+
+body, .widget-title {
+	font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
+}
+
+.site-title {
+	font-size: 4rem;
+}
+
+.subtitle {
+	border: 2px solid gray;
+	color: gray;
+	padding: 1.5rem;
+	text-align: right;
+	max-width: 50%;
+	float: right;
+	display:  block;
+}
+
+.subtitle-mobile { 
+	display: none; 
+}
+
+.subtitle-line {
+	font-size: 1.5rem;
+	font-style: italic;
+  	font-weight: 100;
+	display: block !important;
+}
+
+.entry-header {
+	margin-bottom: 3rem;
+}
+
+.entry-title {
+	margin-bottom: 1rem;
+}
+
+.excerpt-permalink {
+	text-align: right;
+	font-style: italic;
+}
+
+.entry-title {
+	clear: none;
+}
+
+@media only screen and (max-width: 500px) {
+  a.custom-logo-link img {
+    display: none;
+  }
+  .entry-title {
+	clear: both;
+  }
+  .subtitle-mobile {
+	border: 2px solid gray;
+	margin: 0rem;
+	color: gray;
+	padding: 0.5rem;
+	text-align: right;
+  	display:  block;
+  }
+  .subtitle {
+  	display:  none;
+  }
+}
