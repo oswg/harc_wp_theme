@@ -5,8 +5,8 @@
 	}
 
 	function order_by_date_and_session($query) {
-		if ( is_page() ) { return $query; }
-		if( $query->is_main_query() ) {
+		if ( is_admin() || is_page() ) { return $query; }
+		if ( $query->is_main_query() ) {
 			$meta_query = array(
 				'date_q' => array(
 					'key' => 'date',
