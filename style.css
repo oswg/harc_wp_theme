@@ -56,9 +56,8 @@ body, .widget-title {
 	clear: none;
 }
 
-.widget-title a {
-	content: "\f504";
-	padding-right: 18px;
+h2.widget-title a:after {
+	content: "\f442";
 }
 
 @media only screen and (max-width: 500px) {
