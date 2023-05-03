@@ -38,7 +38,7 @@
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 		<div class="excerpt-permalink">
-			<a href="<?php the_permalink(); ?>">Go to the transcript.</a>
+			<a href="<?php the_permalink(); ?>">Go to the transcript.</a><i class="fas fa-external-link-alt" style="padding-left: 1rem;"></i>
 		</div>
 	</div><!-- .entry-summary -->
 
