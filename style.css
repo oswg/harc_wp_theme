@@ -51,10 +51,6 @@ body, .widget-title {
 	margin-top:  2rem;
 }
 
-.site-branding {
-    padding: 0 5%;
-}
-
 
 .excerpt-permalink {
 	text-align: right;
@@ -70,7 +66,7 @@ body, .widget-title {
     display: none;
   }
   .entry-title {
-	clear: both;
+		clear: both;
   }
   .subtitle-mobile {
 	border: 2px solid gray;
@@ -82,5 +78,8 @@ body, .widget-title {
   }
   .subtitle {
   	display:  none;
+  }
+  .site-title {
+  	margin-top:  0rem;
   }
 }
