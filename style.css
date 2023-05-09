@@ -51,12 +51,10 @@ body, .widget-title {
 	margin-top:  2rem;
 }
 
-@media screen and (min-width: 59.6875em) {
-	.site-branding {
-	    min-height: 0;
-	    padding: 0 5%;
-	}
+.site-branding {
+    padding: 0 5%;
 }
+
 
 .excerpt-permalink {
 	text-align: right;
