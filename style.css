@@ -52,7 +52,7 @@ body, .widget-title {
 	margin-top:  2rem;
 }
 
-.widget-list ul {
+.widget-list {
 	list-style-type: none;
   margin: 0;
   padding: 0;
