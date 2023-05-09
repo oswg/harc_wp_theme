@@ -48,7 +48,12 @@ body, .widget-title {
 }
 
 .site-title {
-	margin-top:  1rem;
+	margin-top:  2rem;
+}
+
+.site-branding {
+    min-height: 0;
+    padding: 0 5%;
 }
 
 .excerpt-permalink {
