@@ -52,6 +52,16 @@ body, .widget-title {
 	margin-top:  2rem;
 }
 
+.widget-list ul {
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.widget-list li {
+	border-top: 1px solid #ddd9d6;
+	padding: 0.7667em 0;
+}
 
 .excerpt-permalink {
 	text-align: right;
