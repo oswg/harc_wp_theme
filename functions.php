@@ -31,7 +31,7 @@
 			
 			$query->set( 'meta_query', $meta_query );
 			$query->set( 'orderby', $order_by );
-			$query->set( 'posts_per_page', 10 );
+			$query->set( 'posts_per_page', 15 );
 		}
 	}
 
