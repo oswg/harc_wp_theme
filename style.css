@@ -63,6 +63,11 @@ body, .widget-title {
 	padding: 0.7667em 0;
 }
 
+.widget-list li:first-child {
+	border-top: none;
+	padding: 0.7667em 0;
+}
+
 .excerpt-permalink {
 	text-align: right;
 	font-style: italic;
