@@ -26,6 +26,7 @@ body, .widget-title {
 	max-width: 50%;
 	float: right;
 	display:  block;
+	margin: 0 0 1rem 1rem;
 }
 
 .subtitle-mobile { 
