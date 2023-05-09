@@ -47,6 +47,10 @@ body, .widget-title {
 	margin-bottom: 1rem;
 }
 
+.site-title {
+	margin-top:  1rem;
+}
+
 .excerpt-permalink {
 	text-align: right;
 	font-style: italic;
