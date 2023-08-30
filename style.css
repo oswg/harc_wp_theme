@@ -77,8 +77,8 @@ body, .widget-title {
 	clear: none;
 }
 
-a.custom-logo-link img {
-	max-height: 10%;
+img.custom-logo {
+	max-height: 10% !important;
 }
 
 @media only screen and (max-width: 955px) {
