@@ -37,4 +37,10 @@
 
 	add_action('pre_get_posts', 'order_by_date_and_session');
 	add_action( 'wp_enqueue_scripts', 'harc_enqueue_styles' );
+	remove_theme_support( 'post-thumbnails' );
+	add_theme_support( 'custom-logo', array(
+		'height'      => 363,
+		'width'       => 500,
+		'flex-height' => false,
+	) );
 ?>
