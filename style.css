@@ -78,10 +78,15 @@ body, .widget-title {
 }
 
 img.custom-logo {
-	max-height: 10% !important;
+	/*max-height: 10% !important;*/
+	padding: 0 10%;
 }
 
 @media only screen and (max-width: 955px) {
+	header {
+		padding: inherit;
+	}
+
   a.custom-logo-link img {
     display: none;
   }
