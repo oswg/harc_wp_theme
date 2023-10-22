@@ -82,10 +82,12 @@ img.custom-logo {
 	padding: 0 10%;
 }
 
+.site-header {
+	padding: inherit;
+}
+
 @media only screen and (max-width: 955px) {
-	.site-header {
-		padding: inherit;
-	}
+
 
   a.custom-logo-link img {
     display: none;
