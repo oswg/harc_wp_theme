@@ -83,7 +83,7 @@ img.custom-logo {
 }
 
 .site-header {
-	padding: inherit;
+	padding: 0 10%;
 }
 
 @media only screen and (max-width: 955px) {
