@@ -43,4 +43,24 @@
 		'width'       => 500,
 		'flex-height' => false,
 	) );
+
+	function harc_categories() {
+		if ( 'post' == get_post_type() ) {
+			$categories_list = get_the_category_list( esc_html_x( ', ', 'Used between list items, there is a space after the comma.', 'amalie-lite' ) );
+			if ( $categories_list && amalie_categorized_blog() ) {
+				printf( '<span class="cat-links"><span class="screen-reader-text">%1$s </span>%2$s</span>',
+					esc_html_x( 'Categories', 'Used before category names.', 'amalie-lite' ),
+					$categories_list
+				);
+			}
+
+			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'Used between list items, there is a space after the comma.', 'amalie-lite' ) );
+			if ( $tags_list ) {
+				printf( '<span class="tags-links"><span class="screen-reader-text">%1$s </span>%2$s</span>',
+					esc_html_x( 'Tags', 'Used before tag names.', 'amalie-lite' ),
+					$tags_list
+				);
+			}
+		}
+	}
 ?>
