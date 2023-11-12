@@ -73,7 +73,7 @@
 	</div><!-- .entry-content -->
 	<?php if ( is_single() ) : ?>
 		<footer class="entry-footer">
-			<?php amalie_entry_meta(); ?>
+			<?php harc_categories(); ?>
 			<?php edit_post_link( esc_html__( 'Edit', 'amalie-lite' ), '<span class="edit-link">', '</span>' ); ?>
 		</footer><!-- .entry-footer -->
 	<!-- ?php else : ?>
