@@ -18,7 +18,8 @@
 	<header class="entry-header">
 		<div class="subtitle">
 			<span class="subtitle-line"><?php echo get_post_meta(get_the_ID(), 'circle', true); ?></span>
-			<span class="subtitle-line"><?php echo get_post_meta(get_the_ID(), 'event', true); ?>: Session <?php echo get_post_meta(get_the_ID(), 'session', true); ?></span>
+			<span class="subtitle-line"><?php echo get_post_meta(get_the_ID(), 'event', true); ?></span>
+			<span class="subtitle-line">Session <?php echo get_post_meta(get_the_ID(), 'session', true); ?></span>
 			<span class="subtitle-line">
 				<?php $raw_date_value = get_post_meta(get_the_ID(), 'date', true);
 				$date = date_create($raw_date_value);
@@ -34,7 +35,8 @@
 		?>
 		<div class="subtitle-mobile">
 			<span class="subtitle-line"><?php echo get_post_meta(get_the_ID(), 'circle', true); ?></span>
-			<span class="subtitle-line"><?php echo get_post_meta(get_the_ID(), 'event', true); ?>: Session <?php echo get_post_meta(get_the_ID(), 'session', true); ?></span>
+			<span class="subtitle-line"><?php echo get_post_meta(get_the_ID(), 'event', true); ?></span>
+			<span class="subtitle-line">Session <?php echo get_post_meta(get_the_ID(), 'session', true); ?></span>
 			<span class="subtitle-line">
 				<?php $raw_date_value = get_post_meta(get_the_ID(), 'date', true);
 				$date = date_create($raw_date_value);
