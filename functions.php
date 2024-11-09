@@ -21,7 +21,7 @@
 			if ( $query->is_category() ) {
 				$direction = 'ASC';
 			} else {
-				$query->set( 'cat', 128 );
+				$query->set( 'cat', -128 );
 				$direction = 'DESC';
 			}
 
