@@ -47,6 +47,7 @@ body, .widget-title {
   width: 20%;
   height: 35px;
   color: yellow;
+  align-text:  left;
 }
 
 .entry-header {

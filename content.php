@@ -18,7 +18,7 @@
 	<header class="entry-header">
 		<div class="subtitle">
 			<?php if ( has_category( 'Training' ) ) { ?>
-				<span class="subtitle-line training-label">TRAINING</span>
+				<span class="subtitle-line"><i class="fa-solid fa-triangle-exclamation"></i><span class="training-label">TRAINING</span></span>
 			<?php } ?>
 			<span class="subtitle-line"><?php echo get_post_meta(get_the_ID(), 'circle', true); ?></span>
 			<span class="subtitle-line"><?php echo get_post_meta(get_the_ID(), 'event', true); ?></span>
