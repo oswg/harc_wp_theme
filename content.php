@@ -17,7 +17,7 @@
 
 	<header class="entry-header">
 		<div class="subtitle">
-			<?php if ( has_category( 'Training' ) ) { ?>
+			<?php if ( has_category( 'Training' ) && !( is_single() )) { ?>
 				<span class="training-label"><i class="fas fa-exclamation-triangle"></i> Training session</span>
 			<?php } ?>
 			<span class="subtitle-line"><?php echo get_post_meta(get_the_ID(), 'circle', true); ?></span>
@@ -37,7 +37,7 @@
 			endif;
 		?>
 		<div class="subtitle-mobile">
-			<?php if ( has_category( 'Training' ) ) { ?>
+			<?php if ( has_category( 'Training' ) && ( is_single() )) { ?>
 				<span class="training-label"><i class="fas fa-exclamation-triangle"></i> Training session</span>
 			<?php } ?>
 			<span class="subtitle-line"><?php echo get_post_meta(get_the_ID(), 'circle', true); ?></span>
@@ -53,7 +53,7 @@
 
 	<div class="entry-content">
 		<?php if ( has_category( 'Training' ) ) { ?>
-				<p><i class="fas fa-exclamation-triangle"></i> Caveat: This is a session used to training new instruments. As such, please use extra caution in reading, and forgive any errors and mistakes.</p>
+				<p><span class="training-label"><i class="fas fa-exclamation-triangle"></i> Training session</span> This session is part of the training for new instruments. As such, please use extra caution in reading, and forgive any errors of fact or composition.</p>
 			<?php } ?>
 		<?php
 			/* translators: %s: Name of current post */
