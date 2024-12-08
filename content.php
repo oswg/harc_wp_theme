@@ -18,7 +18,7 @@
 	<header class="entry-header">
 		<div class="subtitle">
 			<?php if ( has_category( 'Training' ) && !( is_single() )) { ?>
-				<span class="training-label"><i class="fas fa-user-graduate"> Training session</span>
+				<span class="training-label"><i class="fas fa-user-graduate"></i> Training session</span>
 			<?php } ?>
 			<span class="subtitle-line"><?php echo get_post_meta(get_the_ID(), 'circle', true); ?></span>
 			<span class="subtitle-line"><?php echo get_post_meta(get_the_ID(), 'event', true); ?></span>
@@ -38,7 +38,7 @@
 		?>
 		<div class="subtitle-mobile">
 			<?php if ( has_category( 'Training' ) && !( is_single() )) { ?>
-				<span class="training-label"><i class="fas fa-user-graduate"> Training session</span>
+				<span class="training-label"><i class="fas fa-user-graduate"></i> Training session</span>
 			<?php } ?>
 			<span class="subtitle-line"><?php echo get_post_meta(get_the_ID(), 'circle', true); ?></span>
 			<span class="subtitle-line"><?php echo get_post_meta(get_the_ID(), 'event', true); ?></span>
