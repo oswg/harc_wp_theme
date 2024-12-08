@@ -53,7 +53,7 @@
 
 	<div class="entry-content">
 		<?php if ( has_category( 'Training' )  && ( is_single() ) ) { ?>
-				<p class="training-caveat"><i class="fas fa-exclamation-triangle"></i> IMPORTANT CAVEAT: This session is part of the training for new instruments. As such, please use extra caution in reading, and forgive any errors of fact or composition.</p>
+				<p class="training-caveat"><i class="fas fa-exclamation-triangle"></i> IMPORTANT CAVEAT: This session is part of the training for new instruments. As such, please use extra caution in reading and forgive any errors of fact, orientation, or composition.</p>
 			<?php } ?>
 		<?php
 			/* translators: %s: Name of current post */
