@@ -40,6 +40,15 @@ body, .widget-title {
 	display: block !important;
 }
 
+.training-label {
+	background-color: black;
+	border: none;
+  border-radius: 25px;
+  width: 20%;
+  height: 35px;
+  color: yellow;
+}
+
 .entry-header {
 	margin-bottom: 3rem;
 }

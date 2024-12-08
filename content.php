@@ -17,6 +17,9 @@
 
 	<header class="entry-header">
 		<div class="subtitle">
+			<?php if ( has_category( 'your-category-slug' ) ) { ?>
+				<span class="subtitle-line training-label">TRAINING</span>
+			<?php } ?>
 			<span class="subtitle-line"><?php echo get_post_meta(get_the_ID(), 'circle', true); ?></span>
 			<span class="subtitle-line"><?php echo get_post_meta(get_the_ID(), 'event', true); ?></span>
 			<span class="subtitle-line">Session <?php echo get_post_meta(get_the_ID(), 'session', true); ?></span>
@@ -34,6 +37,9 @@
 			endif;
 		?>
 		<div class="subtitle-mobile">
+			<?php if ( has_category( 'your-category-slug' ) ) { ?>
+				<span class="subtitle-line training-label">TRAINING</span>
+			<?php } ?>
 			<span class="subtitle-line"><?php echo get_post_meta(get_the_ID(), 'circle', true); ?></span>
 			<span class="subtitle-line"><?php echo get_post_meta(get_the_ID(), 'event', true); ?></span>
 			<span class="subtitle-line">Session <?php echo get_post_meta(get_the_ID(), 'session', true); ?></span>
@@ -50,6 +56,7 @@
 			/* translators: %s: Name of current post */
 			if ( is_single() ) :
 				the_content( sprintf(
+					'<p class="training-blurb">This is a training session for newer instruments. Please read with additional discernment and discretion.</p>',
 					esc_html__( 'Continue reading %s', 'amalie-lite' ),
 					the_title( '<span class="screen-reader-text">', '</span>', false )
 				) );
