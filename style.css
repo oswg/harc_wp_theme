@@ -51,12 +51,14 @@ body, .widget-title {
     display: block !important;
 text-transform: uppercase;
     font-family: sans-serif;
+    font-size: 75%;
 }
 
 p.training-caveat {
 	border: 2px solid black;
 	border-radius: 25px;
 font-family: sans-serif;
+font-weight: bold;
 }
 
 .entry-header {
