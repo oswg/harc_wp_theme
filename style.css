@@ -40,7 +40,7 @@ body, .widget-title {
 	display: block !important;
 }
 
-.subtitle-line .training-label {
+.training-label {
 	background-color: black;
 	border: none;
   border-radius: 25px;
@@ -48,6 +48,7 @@ body, .widget-title {
   height: 35px;
   color: yellow;
   align-text:  left;
+	font-style: bold;
 }
 
 .entry-header {
