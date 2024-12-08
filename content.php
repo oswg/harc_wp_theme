@@ -37,7 +37,7 @@
 			endif;
 		?>
 		<div class="subtitle-mobile">
-			<?php if ( has_category( 'your-category-slug' ) ) { ?>
+			<?php if ( has_category( 'Training' ) ) { ?>
 				<span class="training-label"><i class="fas fa-exclamation-triangle"></i> Training session</span>
 			<?php } ?>
 			<span class="subtitle-line"><?php echo get_post_meta(get_the_ID(), 'circle', true); ?></span>
@@ -52,14 +52,14 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php if ( has_category( 'your-category-slug' ) ) { ?>
+		<?php if ( has_category( 'Training' ) ) { ?>
 				<p><i class="fas fa-exclamation-triangle"></i> Caveat: This is a session used to training new instruments. As such, please use extra caution in reading, and forgive any errors and mistakes.</p>
 			<?php } ?>
 		<?php
 			/* translators: %s: Name of current post */
 			if ( is_single() ) :
 				the_content( sprintf(
-					'<p class="training-blurb">This is a training session for newer instruments. Please read with additional discernment and discretion.</p>',
+					'<p class="training-blurb">This is a training session for newer instruments. There may be errors, discrepancies, or even simply unreadable portions. Please read with additional discernment and discretion.</p>',
 					esc_html__( 'Continue reading %s', 'amalie-lite' ),
 					the_title( '<span class="screen-reader-text">', '</span>', false )
 				) );
