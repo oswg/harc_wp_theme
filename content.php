@@ -53,13 +53,12 @@
 
 	<div class="entry-content">
 		<?php if ( has_category( 'Training' ) ) { ?>
-				<p class="training-label"><i class="fas fa-exclamation-triangle"></i> Caveat: This is a session used to training new instruments. As such, please use extra caution in reading, and forgive any errors and mistakes.</p>
+				<p><i class="fas fa-exclamation-triangle"></i> Caveat: This is a session used to training new instruments. As such, please use extra caution in reading, and forgive any errors and mistakes.</p>
 			<?php } ?>
 		<?php
 			/* translators: %s: Name of current post */
 			if ( is_single() ) :
 				the_content( sprintf(
-					'<p class="training-blurb">This is a training session for newer instruments. There may be errors, discrepancies, or even simply unreadable portions. Please read with additional discernment and discretion.</p>',
 					esc_html__( 'Continue reading %s', 'amalie-lite' ),
 					the_title( '<span class="screen-reader-text">', '</span>', false )
 				) );
