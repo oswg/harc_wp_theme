@@ -55,10 +55,8 @@ text-transform: uppercase;
 }
 
 .training-caveat {
-	border: 2px solid black;
-	border-radius: 25px;
-font-family: sans-serif;
-font-weight: bold;
+	font-family: sans-serif;
+	font-weight: bold;
 }
 
 .entry-header {
