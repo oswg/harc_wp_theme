@@ -40,7 +40,7 @@ body, .widget-title {
 	display: block !important;
 }
 
-.subtitle-line .training-label {
+.training-label {
 	background-color: black;
 	border: none;
   border-radius: 25px;
@@ -51,6 +51,12 @@ body, .widget-title {
     display: block !important;
 text-transform: uppercase;
     font-family: sans-serif;
+}
+
+p.training-caveat {
+	border: 2px solid black;
+	border-radius: 25px;
+font-family: sans-serif;
 }
 
 .entry-header {
