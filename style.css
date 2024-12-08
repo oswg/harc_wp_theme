@@ -44,11 +44,13 @@ body, .widget-title {
 	background-color: black;
 	border: none;
   border-radius: 25px;
-  width: 20%;
-  height: 35px;
   color: yellow;
-  align-text:  left;
-	font-style: bold;
+  align-text:  center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: block !important;
+text-transform: uppercase;
+    font-family: sans-serif;
 }
 
 .entry-header {

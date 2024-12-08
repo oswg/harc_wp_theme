@@ -52,6 +52,9 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+		<?php if ( has_category( 'your-category-slug' ) ) { ?>
+				<p><i class="fas fa-exclamation-triangle"></i> Caveat: This is a session used to training new instruments. As such, please use extra caution in reading, and forgive any errors and mistakes.</p>
+			<?php } ?>
 		<?php
 			/* translators: %s: Name of current post */
 			if ( is_single() ) :
