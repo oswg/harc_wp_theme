@@ -40,7 +40,7 @@ body, .widget-title {
 	display: block !important;
 }
 
-.training-label {
+.subtitle-line .training-label {
 	background-color: black;
 	border: none;
   border-radius: 25px;
