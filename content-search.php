@@ -14,7 +14,7 @@
 
 	<header class="entry-header">
 		<div class="subtitle">
-			<?php if ( has_category( 'Training' ) ) { ?>
+			<?php if ( has_category( 'Training Session' ) ) { ?>
 				<span class="training-label"><i class="fas fa-exclamation-triangle"></i> Training session</span>
 			<?php } ?>
 			<span class="subtitle-line"><?php echo get_post_meta(get_the_ID(), 'circle', true); ?></span>
@@ -27,7 +27,7 @@
 		</div>
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 		<div class="subtitle-mobile">
-			<?php if ( has_category( 'Training' ) ) { ?>
+			<?php if ( has_category( 'Training Session' ) ) { ?>
 				<span class="training-label"><i class="fas fa-exclamation-triangle"></i> Training session</span>
 			<?php } ?>
 			<span class="subtitle-line"><?php echo get_post_meta(get_the_ID(), 'circle', true); ?></span>
