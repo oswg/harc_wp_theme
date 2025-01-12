@@ -64,4 +64,37 @@
 			}
 		}
 	}
+
+	function list_child_categories($parent_category_slug) {
+	    // Get the ID of the parent category by slug
+	    $parent_category = get_category_by_slug($parent_category_slug);
+	    if (!$parent_category) {
+	        return; // Parent category not found
+	    }
+	    $parent_category_id = $parent_category->term_id;
+
+	    // Get the child categories of the parent category
+	    $args = array(
+	        'parent' => $parent_category_id,
+	        'hide_empty' => false // Set to true to hide categories without posts
+	    );
+	    $child_categories = get_categories($args);
+
+	    // Check if the parent category has child categories
+	    if ($child_categories) {
+	        echo '<ul>';
+	        foreach ($child_categories as $child_category) {
+	            // Generate the URL to the category
+	            $category_link = get_category_link($child_category->term_id);
+	            // Display the category link
+	            echo '<li><a href="' . esc_url($category_link) . '">' . esc_html($child_category->name) . '</a></li>';
+	        }
+	        echo '</ul>';
+	    } else {
+	        echo 'No child categories found.';
+	    }
+	}
+
+// Usage: Call this function with the parent category slug where you want to display the list
+// Example: list_child_categories('parent-category-slug');
 ?>
